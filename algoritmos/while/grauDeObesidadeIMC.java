@@ -23,5 +23,6 @@ public class grauDeObesidadeIMC {
        cont++;
 	}
     System.out.print(contadorObesos+" pessoas não obesas");
+	entrada.close();
   }
 }
