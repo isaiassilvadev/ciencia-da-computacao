@@ -8,6 +8,5 @@ public class metadeDoNumero {
       System.out.println("A metade de " + contador + " é " + metade);
       contador++;
     }
-    entrada.close();
   }
 }
