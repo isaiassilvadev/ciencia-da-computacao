@@ -62,6 +62,6 @@ public class cardapioLerProduto {
         } while(continuar.equals("sim") || continuar.equals("Sim"));
         
         System.out.print("Valor da compra: "+precoFinal);
-      
+        entrada.close();
   }
 }
