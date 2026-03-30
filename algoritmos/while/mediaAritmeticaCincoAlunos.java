@@ -22,5 +22,6 @@ public class mediaAritmeticaCincoAlunos {
       System.out.println("A média do Aluno "+ cont+ " é igual a "+media);
        cont++;
 	}
+	entrada.close();
   }
 }
