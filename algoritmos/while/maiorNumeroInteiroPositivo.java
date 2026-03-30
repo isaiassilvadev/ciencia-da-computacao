@@ -22,5 +22,6 @@ public class maiorNumeroInteiroPositivo {
       contador++;
     }
     System.out.println(" menor número digitado é "+ menorNumero);
+	entrada.close();
   }
 }
