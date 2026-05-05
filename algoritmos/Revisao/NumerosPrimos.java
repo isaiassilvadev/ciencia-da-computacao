@@ -26,7 +26,6 @@ public class NumerosPrimos
         System.out.println("---------------------------------");
         System.out.println("Todos os números primos de 1 a 100");
         int numerosPrimos[] = new int[100];
-        int indice = 0;
         
         
          for(int i = 1; i <= 100; i++){
@@ -40,14 +39,15 @@ public class NumerosPrimos
              
            }
             if(contDivisores <= 2){
-                numerosPrimos[indice] = i;
-                indice++;
+                numerosPrimos[i] = i;
             }
         }
         
         
-         for(int i = 0; i < indice; i++){
-            System.out.print(numerosPrimos[i]+", ");
+         for(int i = 0; i < numerosPrimos.length; i++){
+             if (numerosPrimos[i] != 0) {
+                 System.out.print(numerosPrimos[i]+", ");
+             }
         }
         ent.close();
 	}
