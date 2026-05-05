@@ -22,27 +22,32 @@ public class NumerosPrimos
             System.out.println("O número "+numero+" é primo");
         }
         
-        System.out.println(contDivisores);
-        
+       
         System.out.println("---------------------------------");
         System.out.println("Todos os números primos de 1 a 100");
-        int numerosPrimos[];
+        int numerosPrimos[] = new int[100];
+        int indice = 0;
         
         
          for(int i = 1; i <= 100; i++){
-           for(int j = 1; j <= 100; j++) { 
+           contDivisores = 0;
+           
+           for(int j = 1; j <= i; j++) { 
+               
              if(i % j == 0) {
                contDivisores++;
              }
+             
            }
-           if(contDivisores <= 2) {
-               numerosPrimos = new int[i];
-           }
+            if(contDivisores <= 2){
+                numerosPrimos[indice] = i;
+                indice++;
+            }
         }
         
         
-         for(int i = 1; i <= numerosPrimos.length; i++){
-            System.out.println(numerosPrimos[i]);
+         for(int i = 0; i < indice; i++){
+            System.out.print(numerosPrimos[i]+", ");
         }
         ent.close();
 	}
