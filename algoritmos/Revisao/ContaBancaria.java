@@ -22,7 +22,7 @@ public class ContaBancaria {
         return titular;
   }
 
-  public double getSaldo() {
+  public float getSaldo() {
         return saldo;
   }
 
