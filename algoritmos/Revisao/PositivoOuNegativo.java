@@ -5,9 +5,11 @@ public class PositivoOuNegativo {
         Scanner ent = new Scanner(System.in);
         int numero;
         String result;
-        
-        System.out.println("Digite um número inteiro: ");
-        numero = ent.nextInt();
+
+        do {
+            System.out.println("Digite um número inteiro: ");
+            numero = ent.nextInt();
+        } while(numero == 0);
         
         result = (numero < 0)? "é negativo": "é positivo";
         
