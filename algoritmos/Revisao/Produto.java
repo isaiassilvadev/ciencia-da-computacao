@@ -5,10 +5,10 @@ public class Produto {
        private Float preco;
        private int quantidade;
 
-     public class Produto() {
+     public Produto() {
      }
 
-     public class Produto(String nm, Float prc, int quant) {
+     public Produto(String nm, Float prc, int quant) {
          this.nome = nm;
          this.preco = prc;
          this.quantidade = quant;
@@ -18,11 +18,11 @@ public class Produto {
           return nome;
     }
 
-   public String getPreco() {
+   public Float getPreco() {
           return preco;
     }
 
-   public String getQuantidade() {
+   public int getQuantidade() {
           return quantidade;
     }
 
@@ -33,13 +33,13 @@ public class Produto {
      }
 
     public void setPreco(Float preco) {
-          if(preco != null && preco >=0) {
+          if(preco >=0) {
               this.preco = preco;
           }
      }
 
     public void setQuantidade (int quant) {
-          if(quant != null && quant >= 0) {
+          if(quant >= 0) {
               this.quantidade = quant;
           }
      }
@@ -59,5 +59,5 @@ public class Main {
    System.out.println("Nome: " + prod1.getNome());
    System.out.println("Preço: " + prod1.getPreco());
    System.out.println("Quantidade: " + prod1.getQuantidade());
-   }
-  }
+    }
+}
