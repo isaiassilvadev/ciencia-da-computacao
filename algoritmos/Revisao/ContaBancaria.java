@@ -71,6 +71,19 @@ public class Main {
               saldo = ent.nextFloat();
              
             ContaBancaria cb1 = new ContaBancaria(nome, saldo);
+            ContaBancaria cb2 = new ContaBancaria("Antônio", 1000);
+
+           boolean resp = cb2.setSacar(3000);
+        
+           if(resp){
+               System.out.println("Saque realizado com sucesso");
+              System.out.println("Saldo em conta: " + cb2.getSaldo());
+
+           } else {
+               System.out.println("Falha!");
+              System.out.println("Saldo em conta: " + cb2.getSaldo());
+
+           }
       
           //Sacar e depositar valores e mostrar o saldo da conta
           float valor;
