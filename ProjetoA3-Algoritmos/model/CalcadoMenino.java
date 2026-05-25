@@ -1,3 +1,5 @@
+packpage model;
+
 // --- MENINO ---
 class CalcadoMenino extends Calcado {
     private String temaPersonagem;
