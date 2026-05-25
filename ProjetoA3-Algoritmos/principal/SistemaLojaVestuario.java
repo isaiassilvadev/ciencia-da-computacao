@@ -41,9 +41,9 @@ public class SistemaLojaVestuario {
 
         System.out.println("\n====== ESTOQUE ATUALIZADO (TOSTRING) ======");
         
-        System.out.println(terno);
-        System.out.println(vestido);
-        System.out.println(sapato);
-        System.out.println(sandalia);
+        System.out.println(terno.toString());
+        System.out.println(vestido.toString());
+        System.out.println(sapato.toString());
+        System.out.println(sandalia.toString());
     }
 }
