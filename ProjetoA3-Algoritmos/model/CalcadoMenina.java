@@ -1,3 +1,5 @@
+packpage model;
+
 // --- MENINA ---
 class CalcadoMenina extends Calcado {
     private String detalheEnfeite;
