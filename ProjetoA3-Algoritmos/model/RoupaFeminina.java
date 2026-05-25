@@ -1,3 +1,5 @@
+packpage model;
+
 // --- FEMININA ---
 class RoupaFeminina extends Roupa {
     private String categoriaFeminina;
