@@ -1,3 +1,5 @@
+packpage model;
+
 // --- MASCULINA ---
 class RoupaMasculina extends Roupa {
     private String tipoCorte;
